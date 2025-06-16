@@ -53,6 +53,7 @@
     {"id":{"name":"sGlowCaveSpike","path":"sprites/sGlowCaveSpike/sGlowCaveSpike.yy",},},
     {"id":{"name":"sGlowCaveWall","path":"sprites/sGlowCaveWall/sGlowCaveWall.yy",},},
     {"id":{"name":"tForest","path":"tilesets/tForest/tForest.yy",},},
+    {"id":{"name":"tGlowCave","path":"tilesets/tGlowCave/tGlowCave.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
