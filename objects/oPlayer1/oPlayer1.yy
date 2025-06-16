@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCoaty",
-    "path":"sprites/sCoaty/sCoaty.yy",
+    "name":"sConifer",
+    "path":"sprites/sConifer/sConifer.yy",
   },
   "spriteMaskId":null,
   "visible":true,
