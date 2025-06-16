@@ -10,7 +10,7 @@ courage_jump_speed =6
 //courage variables
 courage= true
 courage_timer= 2
-courage_distance =0
+courage_distance =48
 
 move_x=0 
 move_y=0

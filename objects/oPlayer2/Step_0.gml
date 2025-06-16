@@ -1,6 +1,6 @@
 //updating courage by distance
 distance= point_distance(x,y,other_player.x,other_player.y)
-if distance >= courage_distance{
+if distance <= courage_distance{
 	courage=true
 } else{
 	courage= false
