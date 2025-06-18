@@ -1,29 +1,18 @@
-//Player1 moet encouragement krijgen van player2 om courage te krijgen
+// Movement variables
+xsp = 0;
+ysp = 0;
 
-// with experimenting normal: 2high, 4jumpwidth
-move_speed = 2
-jump_speed = 5
-//couragejump: 3 high, 6jumpwidth
-courage_move_speed =3
-courage_jump_speed =6
+// Speech timer for encouragement bubble logic (optional)
+speak_timer = 0;
 
+// Campfire interaction cooldown
+ignore_campfire_timer = room_speed * 2;
+touching_campfire_last = false;
 
-//courage variables
-courage= true
-courage_timer= 2
-
-//basic bs
-move_x=0 
-move_y=0
-
-collision_tiles = layer_tilemap_get_id("Tiles")
-
-// keys
-right= vk_right
-left= vk_left
-up= vk_up
-action= vk_down
-
-//stuff with the other player
-other_player = instance_find(oPlayer2, 0)
-global.encouragement= false
+// Global flags
+if (!variable_global_exists("dialogue_locked"))  global.dialogue_locked = false;
+if (!variable_global_exists("dialogue_index"))   global.dialogue_index = 0;
+if (!variable_global_exists("p1_speak"))         global.p1_speak = false;
+if (!variable_global_exists("p1_down"))          global.p1_down = false;
+if (!variable_global_exists("encouragement"))    global.encouragement = false;
+if (!variable_global_exists("jump_boost_power")) global.jump_boost_power = 4;
