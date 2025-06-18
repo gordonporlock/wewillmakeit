@@ -6,12 +6,6 @@ if (global.dialogue_locked) {
 }
 
 
-// Stop if dialogue active
-if (global.dialogue_locked) {
-    xsp = 0; ysp = 0;
-    exit;
-}
-
 // Gravity
 ysp += 0.1;
 xsp = 0;
