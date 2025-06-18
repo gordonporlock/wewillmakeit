@@ -6,9 +6,9 @@ if (global.dialogue_locked) {
 }
 
 
-// Stop input if dialogue active
 if (global.dialogue_locked) {
-    xsp = 0; ysp = 0;
+    xsp = 0;
+    ysp = 0;
     exit;
 }
 
@@ -16,30 +16,45 @@ if (global.dialogue_locked) {
 ysp += 0.25;
 xsp = 0;
 
-// Movement input
+// Input
 if (keyboard_check(vk_left)) xsp = -move_speed;
 if (keyboard_check(vk_right)) xsp = move_speed;
 
-
-// Jump boost only if encouraged (Player2 pressed S)
+// Encouraged state
 var encouraged = global.encouragement;
 
-// Jump logic for Player1
-if (place_meeting(x, y + 1, oCollision)) {
-    ysp = 0;
-    if (keyboard_check(vk_up)) {
-        ysp = encouraged ? -global.jump_boost_power : -jump_speed;
-    }
+// Ground check (AFTER movement)
+var grounded = place_meeting(x, y + 1, oCollision);
+
+// Jumping
+if (grounded && keyboard_check(vk_up)) {
+    ysp = encouraged ? -global.jump_boost_power : -jump_speed;
 }
 
-// Move and collide
-move_and_collide(xsp, ysp, oCollision);
+// Horizontal movement
+if (place_meeting(x + xsp, y, oCollision)) {
+    while (!place_meeting(x + sign(xsp), y, oCollision)) {
+        x += sign(xsp);
+    }
+    xsp = 0;
+}
+x += xsp;
 
-// Clamp inside room
+// Vertical movement
+if (place_meeting(x, y + ysp, oCollision)) {
+    while (!place_meeting(x, y + sign(ysp), oCollision)) {
+        y += sign(ysp);
+    }
+    ysp = 0;
+}
+y += ysp;
+
+// Keeps the player in the room
 x = clamp(x, 0, room_width);
 y = clamp(y, 0, room_height);
 
-// Campfire dialogue (optional)
+
+// Campfire dialogue 
 if (ignore_campfire_timer > 0) {
     ignore_campfire_timer -= 1;
 }
