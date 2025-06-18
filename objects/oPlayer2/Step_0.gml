@@ -7,12 +7,12 @@ if (global.dialogue_locked) {
 
 
 // Gravity
-ysp += 0.1;
+ysp += 0.25;
 xsp = 0;
 
 // Movement input
-if (keyboard_check(ord("A"))) xsp = -3;
-if (keyboard_check(ord("D"))) xsp = 3;
+if (keyboard_check(ord("A"))) xsp = -move_speed;
+if (keyboard_check(ord("D"))) xsp = move_speed;
 
 // Encourage bubble cooldown
 if (encourage_cooldown > 0) {
@@ -49,7 +49,7 @@ if (keyboard_check(ord("S"))) {
 if (place_meeting(x, y + 1, oCollision)) {
     ysp = 0;
     if (keyboard_check(ord("W"))) {
-        ysp = near1 ? -global.jump_boost_power : -2; // jump boost automatically inside radius
+        ysp = near1 ? -global.jump_boost_power : -jump_speed; // jump boost automatically inside radius
     }
 }
 
