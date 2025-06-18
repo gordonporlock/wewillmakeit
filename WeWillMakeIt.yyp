@@ -51,6 +51,8 @@
     {"id":{"name":"sCoaty","path":"sprites/sCoaty/sCoaty.yy",},},
     {"id":{"name":"sCollision","path":"sprites/sCollision/sCollision.yy",},},
     {"id":{"name":"sConifer","path":"sprites/sConifer/sConifer.yy",},},
+    {"id":{"name":"sCourageFalse","path":"sprites/sCourageFalse/sCourageFalse.yy",},},
+    {"id":{"name":"sCourageTrue","path":"sprites/sCourageTrue/sCourageTrue.yy",},},
     {"id":{"name":"sForest","path":"sprites/sForest/sForest.yy",},},
     {"id":{"name":"sGlowCaveDirt","path":"sprites/sGlowCaveDirt/sGlowCaveDirt.yy",},},
     {"id":{"name":"sGlowCaveExplodingCrystal","path":"sprites/sGlowCaveExplodingCrystal/sGlowCaveExplodingCrystal.yy",},},
