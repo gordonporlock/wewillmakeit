@@ -13,12 +13,13 @@ if (global.dialogue_locked) {
 }
 
 // Gravity
-ysp += 0.1;
+ysp += 0.25;
 xsp = 0;
 
 // Movement input
-if (keyboard_check(vk_left)) xsp = -3;
-if (keyboard_check(vk_right)) xsp = 3;
+if (keyboard_check(vk_left)) xsp = -move_speed;
+if (keyboard_check(vk_right)) xsp = move_speed;
+
 
 // Jump boost only if encouraged (Player2 pressed S)
 var encouraged = global.encouragement;
@@ -27,7 +28,7 @@ var encouraged = global.encouragement;
 if (place_meeting(x, y + 1, oCollision)) {
     ysp = 0;
     if (keyboard_check(vk_up)) {
-        ysp = encouraged ? -global.jump_boost_power : -2;
+        ysp = encouraged ? -global.jump_boost_power : -jump_speed;
     }
 }
 

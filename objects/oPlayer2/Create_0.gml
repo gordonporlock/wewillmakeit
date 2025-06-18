@@ -3,10 +3,10 @@ xsp = 0;
 ysp = 0;
 
 // Movement parameters
-move_speed = 2;
-jump_speed = 5;
+move_speed = 2.5;
+jump_speed = 3.5;
 courage_move_speed = 3;
-courage_jump_speed = 6;
+courage_jump_speed = 5.5;
 
 // Courage system
 courage = true;
@@ -47,7 +47,7 @@ touching_campfire_last = false;
 
 // Global safety checks
 if (!variable_global_exists("jump_boost_range"))  global.jump_boost_range = 64;
-if (!variable_global_exists("jump_boost_power")) global.jump_boost_power = 4;
+if (!variable_global_exists("jump_boost_power")) global.jump_boost_power = 5.5;
 if (!variable_global_exists("dialogue_locked"))  global.dialogue_locked = false;
 if (!variable_global_exists("p1_down"))          global.p1_down = false;
 if (!variable_global_exists("p1_speak"))         global.p1_speak = false;
