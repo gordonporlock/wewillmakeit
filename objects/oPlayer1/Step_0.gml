@@ -16,9 +16,8 @@ if (global.dialogue_locked) {
 ysp += 0.25;
 xsp = 0;
 
-// Input
-if (keyboard_check(vk_left)) xsp = -move_speed;
-if (keyboard_check(vk_right)) xsp = move_speed;
+// Input horizontal. keyboardchecks give back -1/0/1 therefor movespeed*that
+xsp =move_speed*(keyboard_check(right)- keyboard_check(left))
 
 // Encouraged state
 var encouraged = global.encouragement;
@@ -74,3 +73,17 @@ if (ignore_campfire_timer <= 0 && object_exists(oCampfire)) {
     }
 }
 touching_campfire_last = touching_campfire_now;
+
+// spritestuff
+if xsp !=0{
+	image_xscale = sign(xsp)
+}
+if encouraged {
+	//sprite to encouraged
+	sprite_index= sCourageConifer
+} else {
+	//sprite to normal
+	sprite_index= sConifer
+}
+
+instance_find(oBubble,0).vis = keyboard_check(down)

@@ -18,3 +18,9 @@ if (!variable_global_exists("p1_speak"))         global.p1_speak = false;
 if (!variable_global_exists("p1_down"))          global.p1_down = false;
 if (!variable_global_exists("encouragement"))    global.encouragement = false;
 if (!variable_global_exists("jump_boost_power")) global.jump_boost_power = 6;
+
+//Key config
+left =	vk_left
+right=	vk_right
+up=		vk_up
+down=	vk_down

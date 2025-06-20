@@ -24,11 +24,12 @@ collision_tiles = layer_tilemap_get_id("Tiles");
 right = ord("D");
 left  = ord("A");
 up    = ord("W");
-action = ord("S");
+down = ord("S");
 
 // Other player reference
-other_player = instance_find(oPlayer1, 0);
+p1 = instance_find(oPlayer1, 0);
 distance = 0;
+near1 =point_distance(x, y, p1.x, p1.y) <= 40
 
 // Encouragement system
 p2_is_encouraging  = false;

@@ -9,8 +9,7 @@ ysp += 0.25;
 xsp = 0;
 
 // Input
-if (keyboard_check(ord("A"))) xsp = -move_speed;
-if (keyboard_check(ord("D"))) xsp = move_speed;
+xsp =move_speed*(keyboard_check(right)- keyboard_check(left))
 
 // Encourage bubble cooldown
 if (encourage_cooldown > 0) {
@@ -18,11 +17,11 @@ if (encourage_cooldown > 0) {
 }
 
 // Find Player1
-var p1 = object_exists(oPlayer1) ? instance_find(oPlayer1, 0) : noone;
-var near1 = (p1 != noone) && point_distance(x, y, p1.x, p1.y) <= 40;
+p1 = object_exists(oPlayer1) ? instance_find(oPlayer1, 0) : noone;
+near1 = (p1 != noone) && point_distance(x, y, p1.x, p1.y) <= 40;
 
 // Encouragement bubble
-if (keyboard_check_pressed(ord("S")) && encourage_bubble == noone && encourage_cooldown <= 0) {
+if (keyboard_check_pressed(down) && encourage_bubble == noone && encourage_cooldown <= 0) {
     encourage_bubble = instance_create_layer(x, y - sprite_height - 4, "Instances", oEncourageText);
     encourage_bubble.speaker = id;
     encourage_bubble.owner_ref = id;
@@ -30,13 +29,13 @@ if (keyboard_check_pressed(ord("S")) && encourage_bubble == noone && encourage_c
 }
 
 // Hold encouragement
-global.encouragement = keyboard_check(ord("S"));
+global.encouragement = keyboard_check(down);
 
 // Ground check
 var grounded = place_meeting(x, y + 1, oCollision);
 
 // Jumping
-if (grounded && keyboard_check(ord("W"))) {
+if (grounded && keyboard_check(up)) {
     ysp = near1 ? -global.jump_boost_power : -jump_speed;
 }
 
@@ -84,3 +83,16 @@ if (ignore_campfire_timer <= 0 && object_exists(oCampfire)) {
     }
 }
 touching_campfire_last = touching_campfire_now;
+
+// spritestuff
+// turning
+if xsp !=0{
+	image_xscale = sign(xsp)
+}
+//couragesprites
+if near1 {
+	sprite_index = sCoarageCoaty
+} else {
+	sprite_index= sCoaty
+}
+

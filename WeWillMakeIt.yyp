@@ -36,6 +36,7 @@
   "name":"WeWillMakeIt",
   "resources":[
     {"id":{"name":"fnt_Large","path":"fonts/fnt_Large/fnt_Large.yy",},},
+    {"id":{"name":"oBubble","path":"objects/oBubble/oBubble.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oCampfire","path":"objects/oCampfire/oCampfire.yy",},},
     {"id":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},},
