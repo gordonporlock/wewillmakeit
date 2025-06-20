@@ -8,7 +8,7 @@
     "TileSerialiseData":[],
   },
   "name":"tGlowCave",
-  "out_columns":4,
+  "out_columns":1,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -17,7 +17,10 @@
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
-  "spriteId":null,
+  "spriteId":{
+    "name":"sGlowCaveIceFloor",
+    "path":"sprites/sGlowCaveIceFloor/sGlowCaveIceFloor.yy",
+  },
   "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",
@@ -31,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":16,
+  "tile_count":1,
 }
