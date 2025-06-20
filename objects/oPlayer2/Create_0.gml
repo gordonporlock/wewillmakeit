@@ -34,10 +34,10 @@ near1 =point_distance(x, y, p1.x, p1.y) <= 40
 // Encouragement system
 p2_is_encouraging  = false;
 encourage_bubble   = noone;
-encourage_cooldown = 0;
+encourage_cooldown = 1000;
 
 // Speech timer for down key usage
-speak_timer = 0;
+speak_timer = 6;
 
 // Death/restart logic
 restarting = false;

@@ -5,10 +5,8 @@ if (instance_exists(speaker)) {
 
     // Destroy bubble when player releases encouragement key (S)
     if (!keyboard_check(ord("S"))) {
-        if (instance_exists(owner_ref)) {
-            owner_ref.encourage_bubble = noone;  // Allow spawning again
-            owner_ref.encourage_cooldown = 0;    // Reset cooldown
-        }
+		speaker.encourage_bubble = noone;  // Allow spawning again
+        speaker.encourage_cooldown = 0;    // Reset cooldown
         instance_destroy();
     }
 } else {

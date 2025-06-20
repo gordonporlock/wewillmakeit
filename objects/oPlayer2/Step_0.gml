@@ -24,7 +24,6 @@ near1 = (p1 != noone) && point_distance(x, y, p1.x, p1.y) <= 40;
 if (keyboard_check_pressed(down) && encourage_bubble == noone && encourage_cooldown <= 0) {
     encourage_bubble = instance_create_layer(x, y - sprite_height - 4, "Instances", oEncourageText);
     encourage_bubble.speaker = id;
-    encourage_bubble.owner_ref = id;
     global.encouragement = true;
 }
 
