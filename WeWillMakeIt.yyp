@@ -42,6 +42,7 @@
     {"id":{"name":"oController","path":"objects/oController/oController.yy",},},
     {"id":{"name":"oDialogueBox","path":"objects/oDialogueBox/oDialogueBox.yy",},},
     {"id":{"name":"oEncourageText","path":"objects/oEncourageText/oEncourageText.yy",},},
+    {"id":{"name":"oHouse","path":"objects/oHouse/oHouse.yy",},},
     {"id":{"name":"oPlayer1","path":"objects/oPlayer1/oPlayer1.yy",},},
     {"id":{"name":"oPlayer2","path":"objects/oPlayer2/oPlayer2.yy",},},
     {"id":{"name":"oTextbox","path":"objects/oTextbox/oTextbox.yy",},},
