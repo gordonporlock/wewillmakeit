@@ -3,7 +3,7 @@
   "%Name":"sForrest",
   "bboxMode":0,
   "bbox_bottom":63,
-  "bbox_left":24,
+  "bbox_left":16,
   "bbox_right":127,
   "bbox_top":0,
   "collisionKind":1,
