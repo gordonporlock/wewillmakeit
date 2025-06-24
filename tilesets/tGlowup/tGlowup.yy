@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tGlowCave",
+  "%Name":"tGlowup",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tGlowCave",
-  "out_columns":4,
+  "name":"tGlowup",
+  "out_columns":11,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sGlowcave",
-    "path":"sprites/sGlowcave/sGlowcave.yy",
+    "name":"sglowup",
+    "path":"sprites/sglowup/sglowup.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -28,11 +28,11 @@
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
-  "tileHeight":16,
+  "tileHeight":8,
   "tilehsep":0,
   "tilevsep":0,
-  "tileWidth":16,
+  "tileWidth":8,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":16,
+  "tile_count":128,
 }
