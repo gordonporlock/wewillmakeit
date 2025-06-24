@@ -84,9 +84,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rForrest","path":"rooms/rForrest/rForrest.yy",},},
     {"roomId":{"name":"rHouse","path":"rooms/rHouse/rHouse.yy",},},
     {"roomId":{"name":"rWaterFall","path":"rooms/rWaterFall/rWaterFall.yy",},},
-    {"roomId":{"name":"rForrest","path":"rooms/rForrest/rForrest.yy",},},
     {"roomId":{"name":"rGlowCave","path":"rooms/rGlowCave/rGlowCave.yy",},},
   ],
   "templateType":"game",
