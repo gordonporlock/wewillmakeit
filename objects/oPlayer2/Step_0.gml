@@ -90,7 +90,7 @@ if xsp !=0{
 }
 //couragesprites
 if near1 {
-	sprite_index = sCoarageCoaty
+	sprite_index = sCourageCoaty
 } else {
 	sprite_index= sCoaty
 }
