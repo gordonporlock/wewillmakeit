@@ -51,6 +51,7 @@
     {"id":{"name":"oPlayer1","path":"objects/oPlayer1/oPlayer1.yy",},},
     {"id":{"name":"oPlayer2","path":"objects/oPlayer2/oPlayer2.yy",},},
     {"id":{"name":"oTextbox","path":"objects/oTextbox/oTextbox.yy",},},
+    {"id":{"name":"rEnd","path":"rooms/rEnd/rEnd.yy",},},
     {"id":{"name":"rForrest","path":"rooms/rForrest/rForrest.yy",},},
     {"id":{"name":"rGlowCave","path":"rooms/rGlowCave/rGlowCave.yy",},},
     {"id":{"name":"rHouse","path":"rooms/rHouse/rHouse.yy",},},
@@ -87,10 +88,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rGlowCave","path":"rooms/rGlowCave/rGlowCave.yy",},},
+    {"roomId":{"name":"rEnd","path":"rooms/rEnd/rEnd.yy",},},
     {"roomId":{"name":"rForrest","path":"rooms/rForrest/rForrest.yy",},},
     {"roomId":{"name":"rHouse","path":"rooms/rHouse/rHouse.yy",},},
     {"roomId":{"name":"rWaterFall","path":"rooms/rWaterFall/rWaterFall.yy",},},
-    {"roomId":{"name":"rGlowCave","path":"rooms/rGlowCave/rGlowCave.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
