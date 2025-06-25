@@ -151,6 +151,7 @@
     {"name":"inst_4DEFB7EA","path":"rooms/rGlowCave/rGlowCave.yy",},
     {"name":"inst_45FB7F6C","path":"rooms/rGlowCave/rGlowCave.yy",},
     {"name":"inst_440463E1","path":"rooms/rGlowCave/rGlowCave.yy",},
+    {"name":"inst_4746E48D","path":"rooms/rGlowCave/rGlowCave.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -300,7 +301,8 @@
         {"$GMRInstance":"v2","%Name":"inst_4DEFB7EA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4DEFB7EA","objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":608.0,},
         {"$GMRInstance":"v2","%Name":"inst_45FB7F6C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45FB7F6C","objectId":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":304.0,"y":464.0,},
         {"$GMRInstance":"v2","%Name":"inst_440463E1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_440463E1","objectId":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":96.0,},
-      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
+        {"$GMRInstance":"v2","%Name":"inst_4746E48D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4746E48D","objectId":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":976.0,"y":368.0,},
+      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_3","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_3","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":96,"SerialiseWidth":171,"TileCompressedData":[
           -17,-2147483648,1,35,-10,-2147483648,1,35,-159,-2147483648,-2,35,-7,-2147483648,-3,35,-156,-2147483648,
           4,32,101,-2147483648,-2147483648,-9,35,-158,-2147483648,2,48,49,-169,-2147483648,4,32,33,0,0,-167,-2147483648,
@@ -724,7 +726,7 @@
   },
   "sequenceId":null,
   "views":[
-    {"hborder":1140,"hport":2280,"hspeed":-1,"hview":200,"inherit":false,"objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"vborder":2560,"visible":true,"vspeed":-1,"wport":5120,"wview":512,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":1140,"hport":2280,"hspeed":-1,"hview":175,"inherit":false,"objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"vborder":2280,"visible":true,"vspeed":-1,"wport":5120,"wview":448,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
